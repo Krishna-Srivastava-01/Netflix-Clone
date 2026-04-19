@@ -1,16 +1,58 @@
-# React + Vite
+# 🎬 Netflix Clone (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive **Netflix-inspired web application** built using **React.js**. This project focuses on UI/UX, component-based architecture, and state management while simulating backend functionality using static data / JSON Server.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Project Overview
 
-## React Compiler
+This application replicates core features of Netflix such as:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Browsing movies and TV shows
+* Viewing details of selected content
+* Categorized rows (Trending, Top Rated, etc.)
+* Responsive design for all devices
+* Interactive UI with smooth user experience
 
-## Expanding the ESLint configuration
+The project is built as part of the **WAP Group Project** to demonstrate strong understanding of React concepts and frontend development.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧑‍💻 Tech Stack
+
+* **Frontend:** React.js
+* **Styling:** CSS / Tailwind (optional)
+* **Routing:** React Router
+* **State Management:** useState, useEffect
+* **API / Data:** OMDb API / Static JSON / JSON Server
+* **Version Control:** Git & GitHub
+
+---
+
+
+### 🎥 Core Features
+
+* Browse movies by categories
+* Movie posters with hover effects
+* Banner showcasing featured content
+* Movie detail page with description
+
+### 🔄 Dynamic Data Handling
+
+* Fetch data from API / JSON Server
+* Use of `useEffect` for lifecycle handling
+* State management using `useState`
+
+### 🌐 Routing
+
+* Multi-page navigation using React Router
+* Dynamic routing for movie details
+
+## ⭐ Acknowledgements
+
+* Netflix UI inspiration
+* OMDb API (if used)
+* React Documentation
+
+---
+
