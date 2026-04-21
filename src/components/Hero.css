@@ -1,0 +1,16 @@
+.hero {
+  position: relative;
+  height: 85vh;
+  min-height: 500px;
+  background-image: var(--hero-bg);
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-skeleton {
+  background: #111;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
