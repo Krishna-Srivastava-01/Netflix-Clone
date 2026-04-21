@@ -33,7 +33,6 @@
   padding: 0 4vw 80px;
   max-width: 520px;
 }
-
 .hero-eyebrow {
   font-size: 0.72rem;
   font-weight: 600;
@@ -42,5 +41,21 @@
   color: #e50914;
   margin: 0 0 12px;
 }
-
+.hero-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  letter-spacing: 0.04em;
+  line-height: 1;
+  color: #fff;
+  margin: 0 0 16px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-bottom: 24px;
+}
 
