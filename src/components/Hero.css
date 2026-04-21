@@ -27,5 +27,20 @@
     transparent 30%
   );
 }
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 4vw 80px;
+  max-width: 520px;
+}
+
+.hero-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #e50914;
+  margin: 0 0 12px;
+}
 
 
