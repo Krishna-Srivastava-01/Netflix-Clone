@@ -58,4 +58,23 @@
   color: #bbb;
   margin-bottom: 24px;
 }
+.badge {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #ddd;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 2px 7px;
+  border-radius: 2px;
+}
+.dot {
+  color: #555;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+}
+
 
