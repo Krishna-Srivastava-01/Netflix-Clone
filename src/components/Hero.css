@@ -8,9 +8,24 @@
   display: flex;
   align-items: flex-end;
 }
-
 .hero-skeleton {
   background: #111;
   animation: pulse 1.6s ease-in-out infinite;
 }
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.55) 50%,
+    transparent 100%
+  ),
+  linear-gradient(
+    to top,
+    #0a0a0a 0%,
+    transparent 30%
+  );
+}
+
 
