@@ -49,14 +49,14 @@ export default function Navbar({
             <span className="search-clear" onClick={() => onSearch("")}>✕</span>
           )}
         </div>
-        {/* <button
+        <button
           className="theme-toggle"
           onClick={onThemeToggle}
           title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
         >
           {theme === "dark" ? "☀" : "☾"}
         </button>
-        <div className="avatar">N</div> */}
+        <div className="avatar">N</div>
       </div>
     </nav>
   );
