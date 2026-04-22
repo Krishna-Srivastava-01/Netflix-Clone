@@ -153,3 +153,65 @@
 .theme-light .modal-title {
   color: #111;
 }
+
+.modal-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.modal-year,
+.modal-runtime {
+  font-size: 0.82rem;
+  color: #aaa;
+}
+
+.theme-light .modal-year,
+.theme-light .modal-runtime {
+  color: #555;
+}
+
+.modal-rated {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border: 1px solid #666;
+  color: #aaa;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 28px;
+  padding: 24px 32px 32px;
+}
+
+@media (max-width: 600px) {
+  .modal-body {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .modal-banner {
+    height: 220px;
+  }
+}
+
+.modal-plot {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #ccc;
+  margin: 0 0 24px;
+}
+
+.theme-light .modal-plot {
+  color: #444;
+}
+
+.modal-info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
