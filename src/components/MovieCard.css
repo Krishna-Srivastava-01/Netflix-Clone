@@ -8,3 +8,7 @@
   border-radius: 4px;
   overflow: visible;
 }
+.movie-card:hover {
+  transform: scale(1.18);
+  z-index: 10;
+}
