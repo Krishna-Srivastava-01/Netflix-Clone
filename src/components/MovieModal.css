@@ -215,3 +215,59 @@
   flex-direction: column;
   gap: 14px;
 }
+
+.modal-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.modal-info-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.modal-info-value {
+  font-size: 0.85rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.theme-light .modal-info-value {
+  color: #333;
+}
+
+.modal-genre-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.genre-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(229, 9, 20, 0.15);
+  border: 1px solid rgba(229, 9, 20, 0.35);
+  color: #f08080;
+  transition: background 0.2s;
+}
+
+.theme-light .genre-tag {
+  background: rgba(229, 9, 20, 0.08);
+  color: #c0392b;
+}
+
+.genre-tag:hover {
+  background: rgba(229, 9, 20, 0.28);
+}
+
+.modal-body-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
