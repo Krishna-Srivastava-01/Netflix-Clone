@@ -271,3 +271,33 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.modal-rating-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.theme-light .modal-rating-box {
+  background: #f7f7f7;
+  border-color: #e0e0e0;
+}
+
+.modal-rating-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.modal-rating-score {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  margin-top: 4px;
+}
