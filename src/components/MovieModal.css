@@ -301,3 +301,27 @@
   gap: 3px;
   margin-top: 4px;
 }
+
+.modal-rating-num {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.6rem;
+  color: #f5c518;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.modal-rating-max {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.modal-stars {
+  display: flex;
+  gap: 3px;
+}
+
+.star {
+  font-size: 1.1rem;
+  color: #444;
+  transition: color 0.15s;
+}
