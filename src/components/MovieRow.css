@@ -1,0 +1,22 @@
+.movie-row {
+  padding: 20px 0;
+}
+.row-label {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #e3e3e3;
+  margin: 0 0 14px 4vw;
+  letter-spacing: 0.03em;
+}
+.row-scroll {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 10px 4vw;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+.row-scroll::-webkit-scrollbar {
+  display: none;
+}
