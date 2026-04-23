@@ -325,3 +325,28 @@
   color: #444;
   transition: color 0.15s;
 }
+
+.star.filled {
+  color: #f5c518;
+}
+
+.modal-votes {
+  font-size: 0.72rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.modal-awards {
+  background: rgba(245, 197, 24, 0.06);
+  border: 1px solid rgba(245, 197, 24, 0.18);
+  border-radius: 8px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.theme-light .modal-awards {
+  background: #fffbea;
+  border-color: #f5c518;
+}
