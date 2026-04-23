@@ -29,8 +29,11 @@ const MovieModal = ({ movie, onClose }) => {
     const ratingStars = ratingValue ? Math.round(ratingValue / 2) : null;
 
   return (
-    <div>
-      
+    <div className="modal-backdrop" onClick={handleBackdropClick}>
+      <div className="modal">
+        <button className="modal-close" onClick={onClose}>✕</button>
+        
+      </div>
     </div>
   )
 }
