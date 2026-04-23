@@ -350,3 +350,26 @@
   background: #fffbea;
   border-color: #f5c518;
 }
+
+.modal-awards-text {
+  font-size: 0.8rem;
+  color: #bbb;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.theme-light .modal-awards-text {
+  color: #555;
+}
+
+.modal-boxoffice {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.modal-money {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6fcf97;
+}
