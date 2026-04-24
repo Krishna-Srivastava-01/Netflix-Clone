@@ -5,6 +5,43 @@ import Hero from "./components/Hero";
 import MovieRow from "./components/MovieRow";
 import MovieModal from "./components/MovieModal";
 
+const API_KEY = "95075bd0";
+const BASE_URL = "http://www.omdbapi.com/";
+
+const NAV_ROWS = {
+  Home: [
+    { label: "Trending Now", term: "action" },
+    { label: "Epic Adventures", term: "adventure" },
+    { label: "Dark Thrillers", term: "thriller" },
+    { label: "Comedy Gold", term: "comedy" },
+    { label: "Sci-Fi Universe", term: "science" },
+    { label: "True Crime", term: "crime" },
+  ],
+  "TV Shows": [
+    { label: "Popular Series", term: "series" },
+    { label: "Drama Series", term: "drama" },
+    { label: "Crime Shows", term: "crime show" },
+    { label: "Sci-Fi Series", term: "space" },
+  ],
+  Movies: [
+    { label: "Blockbusters", term: "blockbuster" },
+    { label: "Classic Films", term: "classic" },
+    { label: "Romance", term: "romance" },
+    { label: "Horror", term: "horror" },
+  ],
+  "New & Popular": [
+    { label: "New Releases", term: "2024" },
+    { label: "Award Winners", term: "oscar" },
+    { label: "Most Watched", term: "popular" },
+  ],
+  "My List": [
+    { label: "Action Picks", term: "superhero" },
+    { label: "Comedy Picks", term: "funny" },
+  ],
+};
+
+const FILTER_TYPES = ["All", "Movies", "Series", "Episodes"];
+
 const App = () => {
   return (
     <div>
