@@ -42,3 +42,15 @@
   padding: 12px;
   background: #1a1a1a;
 }
+.card-hover-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  padding: 12px;
+  gap: 6px;
+}
