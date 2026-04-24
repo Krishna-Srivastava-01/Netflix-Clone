@@ -54,6 +54,21 @@ const App = () => {
   const [selectedMovie, setSelectedMovie] = useState(null);
   const currentRows = NAV_ROWS[activeNav] || NAV_ROWS["Home"];
 
+  const currentRows = NAV_ROWS[activeNav] || NAV_ROWS["Home"];
+
+  useEffect(() => {
+    currentRows.forEach(({ term }) => {
+      if (rowData[term]) return;
+      fetch(`${BASE_URL}?apikey=${API_KEY}&s=${encodeURIComponent(term)}&type=movie`)
+        .then((r) => r.json())
+        .then((data) => {
+          if (data.Search) {
+            setRowData((prev) => ({ ...prev, [term]: data.Search }));
+          }
+        });
+    });
+  }, [activeNav]);
+  
   return (
     <div>
       
