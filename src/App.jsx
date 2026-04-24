@@ -52,7 +52,6 @@ const App = () => {
   const [filterType, setFilterType] = useState("All");
   const [theme, setTheme] = useState("dark");
   const [selectedMovie, setSelectedMovie] = useState(null);
-  const currentRows = NAV_ROWS[activeNav] || NAV_ROWS["Home"];
 
   const currentRows = NAV_ROWS[activeNav] || NAV_ROWS["Home"];
 
@@ -68,7 +67,57 @@ const App = () => {
         });
     });
   }, [activeNav]);
-  
+
+  useEffect(() => {
+    const firstRow = currentRows[0];
+    if (firstRow && rowData[firstRow.term]) {
+      const featured = rowData[firstRow.term].find((m) => m.Poster !== "N/A");
+      if (featured) setHeroMovie(featured);
+    }
+  }, [activeNav, rowData]);
+
+  useEffect(() => {
+    if (!searchQuery.trim()) {
+      setSearchResults([]);
+      return;
+    }
+    setSearchLoading(true);
+    const typeParam =
+      filterType === "Series" ? "series" :
+      filterType === "Episodes" ? "episode" : "movie";
+    const timer = setTimeout(() => {
+      fetch(`${BASE_URL}?apikey=${API_KEY}&s=${encodeURIComponent(searchQuery)}&type=${typeParam}`)
+        .then((r) => r.json())
+        .then((data) => {
+          setSearchResults(data.Search || []);
+          setSearchLoading(false);
+        })
+        .catch(() => setSearchLoading(false));
+    }, 400);
+    return () => clearTimeout(timer);
+  }, [searchQuery, filterType]);
+
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === "Escape") setSelectedMovie(null); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  const handleNavClick = (item) => {
+    setActiveNav(item);
+    setSearchQuery("");
+  };
+
+  const filteredResults =
+    filterType === "All"
+      ? searchResults
+      : searchResults.filter((m) => {
+          if (filterType === "Movies") return m.Type === "movie";
+          if (filterType === "Series") return m.Type === "series";
+          if (filterType === "Episodes") return m.Type === "episode";
+          return true;
+        });
+
   return (
     <div>
       
