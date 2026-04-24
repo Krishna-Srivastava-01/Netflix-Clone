@@ -12,3 +12,11 @@
   transform: scale(1.18);
   z-index: 10;
 }
+.card-img-wrap {
+  position: relative;
+  width: 160px;
+  height: 240px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #1c1c1c;
+}
