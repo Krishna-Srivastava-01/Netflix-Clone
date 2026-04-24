@@ -43,6 +43,17 @@ const NAV_ROWS = {
 const FILTER_TYPES = ["All", "Movies", "Series", "Episodes"];
 
 const App = () => {
+  const [rowData, setRowData] = useState({});
+  const [heroMovie, setHeroMovie] = useState(null);
+  const [searchResults, setSearchResults] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchLoading, setSearchLoading] = useState(false);
+  const [activeNav, setActiveNav] = useState("Home");
+  const [filterType, setFilterType] = useState("All");
+  const [theme, setTheme] = useState("dark");
+  const [selectedMovie, setSelectedMovie] = useState(null);
+  const currentRows = NAV_ROWS[activeNav] || NAV_ROWS["Home"];
+
   return (
     <div>
       
