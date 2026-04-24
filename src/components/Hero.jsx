@@ -1,11 +1,15 @@
-import React from 'react'
+import "./Hero.css";
 
-function Hero() {
+export default function Hero({ movie }) {
   if (!movie) {
-    return <div className="hero hero-skeleton" />
+    return <div className="hero hero-skeleton" />;
   }
+
   const bg =
-    movie.Poster !== "N/A"? movie.Poster:"https://via.placeholder.com/1280x720/111/333?text=NETFLUX";
+    movie.Poster !== "N/A"
+      ? movie.Poster
+      : "https://via.placeholder.com/1280x720/111/333?text=NETFLUX";
+
   return (
     <div
       className="hero"
@@ -27,8 +31,5 @@ function Hero() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
-export default Hero
-

@@ -1,9 +1,8 @@
-import React from 'react'
 import "./SearchBar.css";
 
-const SearchBar = ({ value, onChange }) => {
+export default function SearchBar({ value, onChange }) {
   return (
-    <div>
+    <div className="searchbar">
       <span className="searchbar-icon">⌕</span>
       <input
         type="text"
@@ -17,7 +16,5 @@ const SearchBar = ({ value, onChange }) => {
         </button>
       )}
     </div>
-  )
+  );
 }
-
-export default SearchBar

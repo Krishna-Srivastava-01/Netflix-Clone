@@ -1,6 +1,7 @@
-import React from 'react'
+import MovieCard from "./MovieCard";
+import "./MovieRow.css";
 
-function MovieRow() {
+export default function MovieRow({ label, movies, onCardClick }) {
   return (
     <div className="movie-row">
       <h2 className="row-label">{label}</h2>
@@ -18,7 +19,5 @@ function MovieRow() {
             ))}
       </div>
     </div>
-  )
+  );
 }
-
-export default MovieRow

@@ -1,6 +1,7 @@
 .movie-row {
   padding: 20px 0;
 }
+
 .row-label {
   font-size: 1.05rem;
   font-weight: 600;
@@ -8,6 +9,7 @@
   margin: 0 0 14px 4vw;
   letter-spacing: 0.03em;
 }
+
 .row-scroll {
   display: flex;
   gap: 6px;
@@ -17,9 +19,11 @@
   -ms-overflow-style: none;
   scroll-behavior: smooth;
 }
+
 .row-scroll::-webkit-scrollbar {
   display: none;
 }
+
 .card-skeleton {
   flex-shrink: 0;
   width: 160px;
@@ -28,6 +32,7 @@
   background: #1c1c1c;
   animation: shimmer 1.6s ease-in-out infinite;
 }
+
 @keyframes shimmer {
   0%, 100% { opacity: 0.7; }
   50% { opacity: 0.3; }
