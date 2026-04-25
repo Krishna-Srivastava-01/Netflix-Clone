@@ -54,3 +54,20 @@
   padding: 12px;
   gap: 6px;
 }
+.movie-card:hover .card-hover-overlay {
+  opacity: 1;
+}
+.card-play-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
