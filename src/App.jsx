@@ -6,7 +6,7 @@ import MovieRow from "./components/MovieRow";
 import MovieModal from "./components/MovieModal";
 import Footer from "./components/Footer";
 
-const API_KEY = "95075bd0";
+const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
 const BASE_URL = "http://www.omdbapi.com/";
 
 const NAV_ROWS = {
