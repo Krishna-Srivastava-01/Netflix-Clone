@@ -71,3 +71,14 @@
   justify-content: center;
   transition: background 0.2s;
 }
+.card-play-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.card-hover-title {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  line-height: 1.3;
+}
