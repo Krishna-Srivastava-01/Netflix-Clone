@@ -57,7 +57,7 @@ Follow these steps to run Netflux on your local development environment.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/ujjwaljain/netflux.git
+   git clone https://github.com/Krishna-Srivastava-01/Netflix-Clone.git
    cd netflux
    ```
 
