@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.css";
 
 const NAV_ITEMS = ["Home", "TV Shows", "Movies", "New & Popular", "My List"];
@@ -8,6 +8,13 @@ export default function Navbar({
   filterType, onFilterChange, filterTypes, theme, onThemeToggle,
 }) {
   const [searchOpen, setSearchOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 0);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleSearchIconClick = () => {
     setSearchOpen(true);
@@ -18,7 +25,7 @@ export default function Navbar({
   };
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-left">
         <span className="navbar-logo">NETFLUX</span>
         <ul className="navbar-links">
@@ -56,7 +63,17 @@ export default function Navbar({
         >
           {theme === "dark" ? "☀" : "☾"}
         </button>
-        <div className="avatar">N</div>
+        <div className="account-menu">
+          <div className="avatar">N</div>
+          <div className="account-dropdown">
+            <span className="dropdown-caret"></span>
+            <ul className="dropdown-links">
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Help Centre</a></li>
+              <li><a href="#">Sign out of Netflux</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
   );

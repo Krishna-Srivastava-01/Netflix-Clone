@@ -2,7 +2,7 @@
   flex-shrink: 0;
   width: 160px;
   cursor: pointer;
-  transition: transform 0.25s ease, z-index 0s;
+  transition: transform 0.25s ease, z-index 0s 0.25s;
   position: relative;
   z-index: 1;
   border-radius: 4px;
@@ -12,6 +12,7 @@
 .movie-card:hover {
   transform: scale(1.18);
   z-index: 10;
+  transition: transform 0.25s ease, z-index 0s 0s;
 }
 
 .card-img-wrap {

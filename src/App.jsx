@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import MovieRow from "./components/MovieRow";
 import MovieModal from "./components/MovieModal";
+import Footer from "./components/Footer";
 
 const API_KEY = "95075bd0";
 const BASE_URL = "http://www.omdbapi.com/";
@@ -173,15 +174,22 @@ export default function App() {
                 className="search-card"
                 onClick={() => setSelectedMovie(movie)}
               >
-                {movie.Poster !== "N/A" ? (
-                  <img src={movie.Poster} alt={movie.Title} />
-                ) : (
-                  <div className="no-poster">{movie.Title}</div>
-                )}
-                <p className="search-title">{movie.Title}</p>
-                <div className="search-meta">
-                  <span className="search-year">{movie.Year}</span>
-                  <span className="search-type-badge">{movie.Type}</span>
+                <div className="search-card-img-wrap">
+                  {movie.Poster !== "N/A" ? (
+                    <img src={movie.Poster} alt={movie.Title} />
+                  ) : (
+                    <div className="no-poster">{movie.Title}</div>
+                  )}
+                </div>
+                <div className="search-card-content">
+                  <div className="search-play-icon">▶</div>
+                  <div className="search-info">
+                    <p className="search-title">{movie.Title}</p>
+                    <div className="search-meta">
+                      <span className="search-year">{movie.Year}</span>
+                      <span className="search-type-badge">{movie.Type}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -195,6 +203,8 @@ export default function App() {
           onClose={() => setSelectedMovie(null)}
         />
       )}
+
+      <Footer />
     </div>
   );
 }

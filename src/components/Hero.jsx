@@ -1,6 +1,6 @@
 import "./Hero.css";
 
-export default function Hero({ movie }) {
+export default function Hero({ movie, onCardClick }) {
   if (!movie) {
     return <div className="hero hero-skeleton" />;
   }
@@ -26,8 +26,8 @@ export default function Hero({ movie }) {
           <span>{movie.Type}</span>
         </div>
         <div className="hero-buttons">
-          <button className="btn-play">▶ Play</button>
-          <button className="btn-info">ⓘ More Info</button>
+          <button className="btn-play" onClick={() => onCardClick?.(movie)}>▶ Play</button>
+          <button className="btn-info" onClick={() => onCardClick?.(movie)}>ⓘ More Info</button>
         </div>
       </div>
     </div>

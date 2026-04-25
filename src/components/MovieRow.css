@@ -14,7 +14,7 @@
   display: flex;
   gap: 6px;
   overflow-x: auto;
-  padding: 10px 4vw;
+  padding: 30px 4vw;
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
