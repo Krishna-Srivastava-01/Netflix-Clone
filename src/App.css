@@ -97,3 +97,28 @@
   object-fit: cover;
   display: block;
 }
+.no-poster {
+  width: 100%;
+  aspect-ratio: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #666;
+  padding: 12px;
+  background: #222;
+}
+.theme-light .no-poster {
+  background: #eee;
+  color: #999;
+}
+.search-title {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #ddd;
+  margin: 8px 10px 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
