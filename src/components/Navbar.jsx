@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Navbar.css";
 
-const NAV_ITEMS = ["Home", "TV Shows", "Movies", "New & Popular", "My List"];
+const NAV_ITEMS = ["Home", "TV Shows", "Movies", "New & Popular", "My List", "Netflux Abyss"];
 
 export default function Navbar({
   onSearch, searchQuery, activeNav, onNavClick,

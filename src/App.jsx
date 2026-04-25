@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import MovieRow from "./components/MovieRow";
 import MovieModal from "./components/MovieModal";
 import Footer from "./components/Footer";
+import NetfluxAbyss from "./components/NetfluxAbyss";
 
 const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
 const BASE_URL = import.meta.env.VITE_OMDB_BASE_URL || "https://www.omdbapi.com/";
@@ -134,19 +135,23 @@ export default function App() {
       />
 
       {!searchQuery.trim() ? (
-        <>
-          <Hero movie={heroMovie} onCardClick={setSelectedMovie} />
-          <div className="rows-container">
-            {currentRows.map(({ label, term }) => (
-              <MovieRow
-                key={term}
-                label={label}
-                movies={rowData[term] || []}
-                onCardClick={setSelectedMovie}
-              />
-            ))}
-          </div>
-        </>
+        activeNav === "Netflux Abyss" ? (
+          <NetfluxAbyss />
+        ) : (
+          <>
+            <Hero movie={heroMovie} onCardClick={setSelectedMovie} />
+            <div className="rows-container">
+              {currentRows.map(({ label, term }) => (
+                <MovieRow
+                  key={term}
+                  label={label}
+                  movies={rowData[term] || []}
+                  onCardClick={setSelectedMovie}
+                />
+              ))}
+            </div>
+          </>
+        )
       ) : (
         <div className="search-page">
           <div className="search-filter-bar">
