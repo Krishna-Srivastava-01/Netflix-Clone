@@ -9,11 +9,14 @@
   background-color: #f2f2f2;
   color: #111;
 }
-
 .rows-container {
   padding-top: 20px;
   padding-bottom: 60px;
   margin-top: -60px;
   position: relative;
   z-index: 2;
+}
+.search-page {
+  padding: 90px 4vw 60px;
+  min-height: 100vh;
 }
