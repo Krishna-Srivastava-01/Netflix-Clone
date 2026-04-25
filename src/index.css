@@ -1,0 +1,13 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: #e50914;
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --text: #ffffff;
+  --text-muted: #aaaaaa;
+}
