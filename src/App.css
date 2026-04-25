@@ -5,3 +5,15 @@
   font-family: "DM Sans", sans-serif;
   transition: background-color 0.3s, color 0.3s;
 }
+.app.theme-light {
+  background-color: #f2f2f2;
+  color: #111;
+}
+
+.rows-container {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  margin-top: -60px;
+  position: relative;
+  z-index: 2;
+}
