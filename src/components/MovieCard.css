@@ -82,3 +82,16 @@
   margin: 0;
   line-height: 1.3;
 }
+.card-hover-year {
+  font-size: 0.68rem;
+  color: #aaa;
+}
+.card-title {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin: 7px 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 160px;
+}
