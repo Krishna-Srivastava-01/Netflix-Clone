@@ -62,6 +62,12 @@
   border-color: #e50914;
   color: #fff;
 }
+.search-heading {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #ddd;
+  margin: 0 0 24px;
+}
 .theme-light .search-heading {
   color: #333;
 }
