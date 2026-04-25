@@ -8,10 +8,12 @@
   border-radius: 4px;
   overflow: visible;
 }
+
 .movie-card:hover {
   transform: scale(1.18);
   z-index: 10;
 }
+
 .card-img-wrap {
   position: relative;
   width: 160px;
@@ -20,6 +22,7 @@
   overflow: hidden;
   background: #1c1c1c;
 }
+
 .card-img-wrap img {
   width: 100%;
   height: 100%;
@@ -27,9 +30,11 @@
   display: block;
   transition: filter 0.3s;
 }
+
 .movie-card:hover .card-img-wrap img {
   filter: brightness(0.45);
 }
+
 .card-no-poster {
   width: 100%;
   height: 100%;
@@ -42,6 +47,7 @@
   padding: 12px;
   background: #1a1a1a;
 }
+
 .card-hover-overlay {
   position: absolute;
   inset: 0;
@@ -54,9 +60,11 @@
   padding: 12px;
   gap: 6px;
 }
+
 .movie-card:hover .card-hover-overlay {
   opacity: 1;
 }
+
 .card-play-btn {
   width: 40px;
   height: 40px;
@@ -71,9 +79,11 @@
   justify-content: center;
   transition: background 0.2s;
 }
+
 .card-play-btn:hover {
   background: rgba(255, 255, 255, 0.3);
 }
+
 .card-hover-title {
   font-size: 0.72rem;
   font-weight: 600;
@@ -82,10 +92,12 @@
   margin: 0;
   line-height: 1.3;
 }
+
 .card-hover-year {
   font-size: 0.68rem;
   color: #aaa;
 }
+
 .card-title {
   font-size: 0.75rem;
   color: #aaa;
@@ -95,9 +107,11 @@
   text-overflow: ellipsis;
   width: 160px;
 }
+
 .theme-light .card-title {
   color: #555;
 }
+
 .theme-light .card-no-poster {
   background: #e0e0e0;
   color: #999;
