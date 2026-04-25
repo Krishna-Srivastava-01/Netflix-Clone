@@ -11,3 +11,20 @@
   --text: #ffffff;
   --text-muted: #aaaaaa;
 }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button {
+  font-family: inherit;
+}
