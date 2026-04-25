@@ -36,8 +36,7 @@
   margin: 0;
   padding: 0;
 }
-
-/* .navbar-links li {
+.navbar-links li {
   position: relative;
   font-size: 0.83rem;
   font-weight: 500;
@@ -48,7 +47,6 @@
   transition: color 0.18s, background 0.18s;
   white-space: nowrap;
 }
-
 .navbar-links li:hover {
   color: #fff;
   background: rgba(255,255,255,0.08);
@@ -101,7 +99,7 @@
   overflow: hidden;
 }
 
-.search-wrapper.expanded {
+/* .search-wrapper.expanded {
   border-color: rgba(255,255,255,0.6);
   background: rgba(0,0,0,0.75);
   width: 230px;
