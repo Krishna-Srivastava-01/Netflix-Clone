@@ -71,3 +71,15 @@
 .theme-light .search-heading {
   color: #333;
 }
+.search-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+.search-card {
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #1a1a1a;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
