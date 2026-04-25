@@ -95,3 +95,10 @@
   text-overflow: ellipsis;
   width: 160px;
 }
+.theme-light .card-title {
+  color: #555;
+}
+.theme-light .card-no-poster {
+  background: #e0e0e0;
+  color: #999;
+}
