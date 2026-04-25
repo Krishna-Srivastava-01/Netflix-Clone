@@ -38,3 +38,13 @@
   cursor: pointer;
   transition: all 0.2s;
 }
+.filter-pill:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+.filter-pill.active {
+  background: #e50914;
+  border-color: #e50914;
+  color: #fff;
+  font-weight: 600;
+}
