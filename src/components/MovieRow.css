@@ -37,9 +37,11 @@
   0%, 100% { opacity: 0.7; }
   50% { opacity: 0.3; }
 }
+
 .theme-light .row-label {
   color: #222;
 }
+
 .theme-light .card-skeleton {
   background: #ddd;
 }
