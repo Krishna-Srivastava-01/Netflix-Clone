@@ -48,3 +48,20 @@
   color: #fff;
   font-weight: 600;
 }
+.theme-light .filter-pill {
+  border-color: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.05);
+  color: #555;
+}
+.theme-light .filter-pill:hover {
+  background: rgba(0,0,0,0.1);
+  color: #111;
+}
+.theme-light .filter-pill.active {
+  background: #e50914;
+  border-color: #e50914;
+  color: #fff;
+}
+.theme-light .search-heading {
+  color: #333;
+}
