@@ -26,3 +26,15 @@
   flex-wrap: wrap;
   margin-bottom: 28px;
 }
+.filter-pill {
+  padding: 6px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.08);
+  color: #ccc;
+  font-size: 0.82rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
